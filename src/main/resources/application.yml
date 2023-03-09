@@ -1,0 +1,26 @@
+# Proprietes de l'application
+spring:
+  application:
+    name: amccomptes
+  data:
+    mongodb:
+      host: localhost  # URL mongodb
+      port: 27017
+      database: banque-spring
+      username: root
+      password: root
+      authentication-database: admin
+
+# Configuration du log.
+logging:
+  level:
+    org.springframework.web: INFO # Choix du niveau de log affiché
+
+# Proprietes du serveur d'entreprise
+server:
+  port: 10002   # HTTP (Tomcat) port
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/ # url d'accès à l'annuaire
