@@ -30,7 +30,7 @@ public class AmcComptesApplication implements CommandLineRunner {
         assert(compteRepository != null);
 
         if(!compteRepository.existsById(0L)) {
-            Compte c = new Compte(0, 1000, 0L);
+            Compte c = new Compte(0, 1000, 1L);
 
             compteRepository.save(c);
         }
